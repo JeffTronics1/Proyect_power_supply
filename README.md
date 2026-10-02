@@ -1,4 +1,4 @@
-# ⚡ Fuente de Alimentación Multisalida (Altium & Excel)
+# ⚡ Fuente de Alimentación Multisalida (Altium)
 
 <div align="center">
 
