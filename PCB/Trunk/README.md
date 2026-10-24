@@ -19,14 +19,16 @@
 
 | Archivo / Carpeta | Tipo en Altium | Función dentro del Proyecto |
 | :--- | :---: | :--- |
-| 📁 **`Proyect Power Supply/`** | `Project Folder` | Archivo maestro de proyecto `.PrjPcb` y estructura `.PrjPcbStructure`. |
-| 📄 **`000_Hierarchical.SchDoc`** | `Schematic Top` | **Hoja Raíz (Top Sheet):** Símbolos de hoja e interconexión del bus `24VDC`. |
-| 📄 **`100_AC-DC.SchDoc`** | `Schematic Sub` | **Etapa AC/DC:** Entrada $18\text{ VAC}_{\text{rms}}$, rectificación, filtrado capacitivo y EMI. |
-| 📄 **`200_DC-DC.SchDoc`** | `Schematic Sub` | **Bucks Fijos Alta Potencia:** `+12V0` ($5\text{ A}$) y `+5V0` ($5\text{ A}$) con `SY8205FCC`. |
-| 📄 **`201_DC-DC_Part2.SchDoc`** | `Schematic Sub` | **Inversor y Lógica:** `-12V0` ($1\text{ A}$) con `TPS54360DDAR` y `+3V3` ($3\text{ A}$) con `SY8205FCC`. |
-| 📄 **`202_DC-DC_Part3.SchDoc`** | `Schematic Sub` | **Ajustable:** `1.25V–15.0V` ($3\text{ A}$) con `LM2596SX-ADJ` y conector `J2` (Voltímetro). |
-| 🟩 **`Main_PCB_V1R0_XXXXXX.PcbDoc`** | `PCB Document` | **Layout de la Placa:** Documento de ruteo físico y planos de potencia. |
-| 📦 **`Power_Supply_MainBoard.OutJob`** | `Output Job` | **Entregables:** Generación de archivos Gerber, NC Drill y BOM. |
+| 📄 **`Proyect Power Supply.PrjPcb`** | `Altium PCB Project` | **Archivo Maestro de Proyecto:** Enlaza todos los esquemáticos y la placa PCB en un solo flujo jerárquico. |
+| 📄 **`Proyect Power Supply.PrjPcbStructure`** | `PRJPCBSTRUCTURE` | Archivo de metadatos estructurales que define la jerarquía de las hojas del proyecto en Altium. |
+| 📁 **`Proyect Power Supply/`** | `File Folder` | Carpeta de caché generada automáticamente que contiene los historiales locales de Altium (`History`) y los reportes de compilación/errores (`Project Logs`). |
+| 📄 **`000_Hierarchical.SchDoc`** | `Altium Schematic` | **Hoja Raíz (Top Sheet):** Símbolos de hoja e interconexión del bus `24VDC`. |
+| 📄 **`100_AC-DC.SchDoc`** | `Altium Schematic` | **Etapa AC/DC:** Entrada $18\text{ VAC}_{\text{rms}}$, rectificación, filtrado capacitivo y EMI. |
+| 📄 **`200_DC-DC.SchDoc`** | `Altium Schematic` | **Bucks Fijos Alta Potencia:** `+12V0` ($5\text{ A}$) y `+5V0` ($5\text{ A}$) con `SY8205FCC`. |
+| 📄 **`201_DC-DC_Part2.SchDoc`** | `Altium Schematic` | **Inversor y Lógica:** `-12V0` ($1\text{ A}$) con `TPS54360DDAR` y `+3V3` ($3\text{ A}$) con `SY8205FCC`. |
+| 📄 **`202_DC-DC_Part3.SchDoc`** | `Altium Schematic` | **Ajustable:** `1.25V–15.0V` ($3\text{ A}$) con `LM2596SX-ADJ` y conector `J2` (Voltímetro). |
+| 🟩 **`Main_PCB_V1R0_XXXXXX.PcbDoc`** | `Altium PCB Document`| **Layout de la Placa:** Documento de ruteo físico y planos de potencia. |
+| 📦 **`Power_Supply_MainBoard.OutJob`** | `Altium Output Job` | **Entregables:** Generación automatizada de archivos Gerber, NC Drill y BOM. |
 
 <br>
 
