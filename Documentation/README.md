@@ -30,7 +30,7 @@ Esta carpeta centraliza el análisis de potencia, requerimientos del proyecto y 
 
 Las ecuaciones de dimensionamiento de componentes pasivos (inductores, capacitores y resistencias) se encuentran documentadas directamente dentro de los esquemáticos de Altium Designer. 
 
-Sin embargo, para garantizar la viabilidad del diseño, se desarrolló una plantilla de cálculo en Excel que evalúa las condiciones de peor caso (*Worst Out Current case*) para cada convertidor. Los parámetros calculados en estas hojas incluyen:
+Sin embargo, para garantizar la viabilidad del diseño, se utilizó una plantilla de cálculo en Excel que evalúa las condiciones de peor caso (*Worst Out Current case*) para cada convertidor. Los parámetros calculados en estas hojas incluyen:
 
 * **Parámetros de Entrada (Input Data):**
   * `Vin`: Tensión de entrada proveniente del bus DC (ej. $24\text{ V}$).
