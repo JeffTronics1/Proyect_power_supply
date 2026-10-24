@@ -1,15 +1,16 @@
-# ⚡ Fuente de Alimentación Multisalida (Altium)
+# ⚡ Fuente de Alimentación Multisalida de Laboratorio (151.9 W)
 
 <div align="center">
 
 ![Hardware](https://img.shields.io/badge/Hardware-Open%20Source-orange?style=for-the-badge&logo=open-source-hardware)
-![Altium Designer](https://img.shields.io/badge/Altium%20Designer-23.0+-blue?style=for-the-badge&logo=altiumdesigner)
-![Excel](https://img.shields.io/badge/Microsoft%20Excel-Calculator-green?style=for-the-badge&logo=microsoftexcel)
-![Status](https://img.shields.io/badge/Estado-En%20Desarrollo-brightgreen?style=for-the-badge)
+![Altium Designer](https://img.shields.io/badge/Altium%20Designer-Hierarchical%20PCB-blue?style=for-the-badge&logo=altiumdesigner)
+![Excel](https://img.shields.io/badge/Excel-Power%20%26%20BOM%20Calculator-217346?style=for-the-badge&logo=microsoftexcel)
+![Draw.io](https://img.shields.io/badge/Draw.io-Power%20Tree%20%26%20Blocks-F08705?style=for-the-badge&logo=diagramsdotnet)
+![Status](https://img.shields.io/badge/ERC%20Check-Passed%20(0%20Errors)-brightgreen?style=for-the-badge)
 
-**Diseño electrónico integral, dimensionamiento matemático en Excel y layout de PCB multicapa en Altium Designer.**
+**Diseño electrónico jerárquico en Altium Designer, modelado energético y térmico en Excel y arquitectura completa de conversión AC/DC y DC/DC.**
 
-[📊 Cálculos en Excel](#-memoria-de-cálculo-excel) • [📐 Diagramas y PCB](#-diseño-en-altium-designer) • [⚡ Especificaciones](#-especificaciones-técnicas) • [📂 Estructura](#-estructura-del-repositorio)
+[📚 Ir a Documentación](./Documentation/README.md) • [🛠️ Ir a Esquemáticos y PCB (Trunk)](./PCB/Trunk/README.md) • [⚡ Especificaciones](#-especificaciones-técnicas) • [📂 Estructura](#-estructura-del-repositorio)
 
 </div>
 
@@ -17,113 +18,47 @@
 
 ## 📌 Descripción del Proyecto
 
-Este repositorio contiene el diseño completo de una **Fuente de Alimentación Multisalida de Alta Eficiencia y Bajo Ruido**, diseñada para aplicaciones de laboratorio, embebidos y prototipado.
+Este repositorio contiene la ingeniería completa de una **Fuente de Alimentación Multisalida de 151.9 W y 5 Canales**, concebida para alimentar sistemas embebidos, lógica digital, etapas analógicas simétricas y pruebas de prototipado en laboratorio.
 
-El flujo de trabajo combina:
-1. **Modelado Matemático y Dimensionamiento Térmico:** Hoja de cálculo parametrizada en Microsoft Excel para cálculo de componentes, disipación de potencia y estimación de ripple.
-2. **Diseño Electrónico en Altium Designer:** Diagramas esquemáticos modulares, selección de componentes con catálogo activo y diseño de PCB optimizado para integridad de potencia (PI) y compatibilidad electromagnética (EMC).
+El proyecto se divide en dos pilares fundamentales:
+1. **📊 Ingeniería y Documentación (`./Documentation`):** Memorias de cálculo basadas en los *datasheets* de cada convertidor (corriente de entrada, potencia de entrada y potencia disipada), árbol de potencia (*Power Tree*), diagrama de bloques en Draw.io, hojas de datos y especificación completa con BOM en Excel.
+2. **🔌 Diseño Hardware en Altium Designer (`./PCB/Trunk`):** Captura esquemática con arquitectura estrictamente jerárquica validada sin errores eléctricos (ERC), filtro EMI tipo Pi en la etapa rectificadora y layout de PCB (`Main_PCB_V1R0_XXXXXX.PcbDoc`).
 
 ---
 
 ## ⚡ Especificaciones Técnicas
 
-| Salida | Voltaje Nom. | Corriente Máx. | Topología / Regulador | Ripple Estimado |
-| :---: | :---: | :---: | :---: | :---: |
-| **Salida 1** | $5.0\text{ V}$ (Fijo) | $3.0\text{ A}$ | Regulador Conmutado (Buck) | $< 20\text{ mV}_{pp}$ |
-| **Salida 2** | $3.3\text{ V}$ (Fijo) | $1.5\text{ A}$ | LDO / Buck de Alta Eficiencia | $< 10\text{ mV}_{pp}$ |
-| **Salida 3** | $0.0 - 24.0\text{ V}$ (Ajustable) | $0.0 - 2.0\text{ A}$ | Regulador Lineal Ajustable | $< 5\text{ mV}_{pp}$ |
-| **Salida 4** | $-12.0\text{ V}$ / $+12.0\text{ V}$ | $500\text{ mA}$ | Inversor / Carga Simétrica | $< 15\text{ mV}_{pp}$ |
+* **Entrada AC (Secundario Transformador):** 18 VAC rms (desde red de 110 VAC / 60 Hz) con protección por fusible (16 A / 500 V) y varistor MOV (29 V / 500 A).
+* **Bus DC Principal (`24VDC`):** ~24.0 VDC rectificados (Puente 25 A / 50 V), banco de filtrado de 20,400 µF (3 × 6800 µF) y filtro Pi EMI (10 µH, Fc = 11.25 kHz).
+* **Potencia Total Combinada:** **151.9 W** (Suma máxima de corriente en salidas: **17.0 A**).
 
-> **Entrada Principal:** $12.0\text{ V} - 24.0\text{ V DC}$ (o Jack de entrada con protección contra polaridad inversa).
-
----
-
-## 📐 Arquitectura del Sistema
-
-```
-                        ┌─────────────────────────────────┐
-                        │   Entrada DC (12V - 24V)       │
-                        └────────────────┬────────────────┘
-                                         │
-                   ┌─────────────────────┴─────────────────────┐
-                   │   Filtro EMI y Protección Térmica/OVP    │
-                   └─────────────────────┬─────────────────────┘
-                                         │
-        ┌───────────────────┬────────────┴───────┬───────────────────┐
-        ▼                   ▼                    ▼                   ▼
-┌───────────────┐   ┌───────────────┐   ┌─────────────────┐   ┌───────────────┐
-│ Canal 5.0V    │   │ Canal 3.3V    │   │ Canal Variable  │   │ Canal Doble   │
-│ Buck Step-Down│   │ LDO / Buck    │   │ 0-24V Linear    │   │ ±12V Dual     │
-└───────────────┘   └───────────────┘   └─────────────────┘   └───────────────┘
-```
+| ID Canal | Riel de Salida | Tensión Nominal | Corriente Máx. | Potencia Máx. | Topología / Regulador (IC) | Frecuencia (fsw) |
+| :---: | :---: | :---: | :---: | :---: | :--- | :---: |
+| **OUT_01** | `+12V0` | +12.0 V | 5.0 A | 60.0 W | Buck Síncrono (`SY8205FCC` - U1) | 500 kHz |
+| **OUT_02** | `+5V0` | +5.0 V | 5.0 A | 25.0 W | Buck Síncrono (`SY8205FCC` - U2) | 500 kHz |
+| **OUT_03** | `+3V3` | +3.3 V | 3.0 A | 9.9 W | Buck Síncrono (`SY8205FCC` - U3) | 500 kHz |
+| **OUT_04** | `-12V0` | -12.0 V | 1.0 A | 12.0 W | Buck-Boost Inversor (`TPS54360DDAR` - U5) | 500 kHz |
+| **OUT_05** | `1V25-15V0` | 1.25 V – 15.0 V | 3.0 A | 45.0 W | Buck Ajustable (`LM2596SX-ADJ/NOPB` - U4) | 150 kHz |
 
 ---
 
-## 🧮 Memoria de Cálculo (Excel)
-
-El archivo de Excel incluido en la carpeta `/Calculos_Excel/` permite realizar el cálculo automático de los siguientes parámetros clave:
-
-- **Cálculo de Inductancias y Capacitancias:** Cálculo del valor crítico $L_{min}$ para regulación Buck continua y $C_{out}$ según el rizado admisible.
-- **Análisis Térmico:** Estimación de la temperatura de junta ($T_j$) para reguladores lineales mediante:
-  $$T_j = T_a + P_d \cdot (\theta_{jc} + \theta_{cs} + \theta_{sa})$$
-- **BOM y Costos:** Estimación automatizada de costos con footprint y número de parte del fabricante.
-
----
-
-## 🛠️ Diseño en Altium Designer
-
-El diseño en Altium Designer incluye las siguientes características clave:
-
-- **Esquemático Hierárquico:** Separación clara por bloques funcionales (Etapa de Entrada, Regulación Fija, Regulación Variable, Control).
-- **PCB Stackup y Routing:** 
-  - Capas dedicadas para planos de masa (**GND Ground Plane**).
-  - Pistas anchas dimensionadas por criterio de temperatura e intensidad de corriente según norma **IPC-2221**.
-  - Plano de disipación térmica con vías (Thermal Vias Matrix) bajo los componentes de potencia.
-
----
-
-## 🖼️ Galería del Proyecto
-
-<div align="center">
-
-| Vista 3D del PCB | Diagrama Esquemático |
-| :---: | :---: |
-| *(Agrega aquí la imagen 3D de Altium: `![PCB 3D](docs/images/pcb_3d.png)`)* | *(Agrega aquí la imagen del Esquemático: `![Schematic](docs/images/schematic.png)`)* |
-
-</div>
-
----
-
-## 📂 Estructura del Repositorio
+## 📐 Arquitectura y Árbol de Potencia
 
 ```text
-├── Altium_Project/
-│   ├── Schematics/         # Hojas de esquemáticos (.SchDoc)
-│   ├── PCB/                # Layout de la placa (.PcbDoc)
-│   ├── Libraries/          # Librerías personalizadas (.SchLib, .PcbLib)
-│   └── Outputs/            # Gerbers, NC Drill, Pick & Place y BOM
-├── Calculos_Excel/
-│   └── Calculadora_Fuente_Multisalida.xlsx  # Hoja de cálculos dimensionales
-├── Documentation/
-│   ├── Datasheets/         # Hojas de datos de componentes críticos
-│   └── Images/             # Capturas del diseño y PCB 3D
-├── .gitignore
-└── README.md               # Documentación principal
-```
-
----
-
-## 🚀 Cómo Usar este Repositorio
-
-1. **Revisar los Cálculos:** Abre el archivo `Calculadora_Fuente_Multisalida.xlsx` en Microsoft Excel para ajustar los valores de salida o corriente según tus necesidades.
-2. **Abrir el Proyecto en Altium:** Abre el archivo de proyecto `.PrjPcb` dentro de la carpeta `Altium_Project/`.
-3. **Generar Archivos de Fabricación:** Navega a la carpeta `Outputs/` para encontrar los archivos Gerber $RS-274X$ y tablas de perforación listos para enviar a fabricar (JLCPCB, PCBWay, etc.).
-
----
-
-## 🤝 Contribución y Licencia
-
-Desarrollado como proyecto de diseño de hardware libre. Sientete libre de clonar, modificar y mejorar el diseño.
-
-- **Licencia:** MIT Hardware License / Open Source.
-- **Contacto / Soporte:** Si encuentras un problema o tienes sugerencias, por favor abre un *Issue* o envía un *Pull Request*.
+                  ┌──────────────────────────────────────────────┐
+                  │  Entrada 18 VAC rms (J1) + Fusible F1 (16A)  │
+                  │           + Varistor MOV V1 (29V)            │
+                  └──────────────────────┬───────────────────────┘
+                                         │
+                  ┌──────────────────────▼───────────────────────┐
+                  │   Rectificador BR1 (25A) + Banco 20,400 µF   │
+                  │    + Filtro Pi EMI (L6 = 10 µH) + LED D3     │
+                  └──────────────────────┬───────────────────────┘
+                                         │  Bus Jerárquico 24VDC (Icarga ≈ 6.38 A)
+      ┌─────────────────┬────────────────┼────────────────┬────────────────────┐
+      ▼                 ▼                ▼                ▼                    ▼
+┌───────────┐     ┌───────────┐    ┌───────────┐    ┌───────────┐     ┌─────────────────┐
+│ +12V @ 5A │     │ +5V @ 5A  │    │ +3.3V @ 3A│    │ -12V @ 1A │     │ 1.25-15V @ 3A   │
+│ SY8205FCC │     │ SY8205FCC │    │ SY8205FCC │    │ TPS54360  │     │ LM2596SX-ADJ    │
+│  (60.0 W) │     │  (25.0 W) │    │  (9.9 W)  │    │  (12.0 W) │     │ + Voltímetro J2 │
+└───────────┘     └───────────┘    └───────────┘    └───────────┘     └─────────────────┘
