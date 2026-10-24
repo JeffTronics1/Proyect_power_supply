@@ -1,5 +1,3 @@
----
-
 ## 2. README de Documentación (`Documentation/README.md`)
 📍 **Ruta donde debes guardarlo:** `Proyect_power_supply/Documentation/README.md`[cite: 21]
 

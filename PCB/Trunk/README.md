@@ -1,5 +1,3 @@
----
-
 ## 3. README de Hardware y PCB (`PCB/Trunk/README.md`)
 📍 **Ruta donde debes guardarlo:** `Proyect_power_supply/PCB/Trunk/README.md`[cite: 20]
 
