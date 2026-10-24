@@ -34,7 +34,7 @@ Cada etapa de conversión fue dimensionada matemáticamente a partir de las ecua
 * **Tensión de Entrada AC:** Secundario de transformador de $18\text{ VAC}_{\text{rms}}$ a $60\text{ Hz}$.
 * **Tensión Pico Rectificada ($V_p$):**
   $$V_p = V_{\text{rms}} \times \sqrt{2} = 18\text{ VAC} \times 1.414 = 25.46\text{ V}$$
-* **Banco de Capacitores de Filtrado ($C_{28}, C_{29}, C_{30}$):** Calculado para sostener una corriente de carga en el bus DC de $I_{\text{carga}} = 6.381\text{ A}$ con un rizado máximo de $V_r = 2.5\text{ V}$ a una frecuencia de rectificación de onda completa $f_{\text{red\_rect}} = 120\text{ Hz}$:
+* **Banco de Capacitores de Filtrado ($C_{28}, C_{29}, C_{30}$):** Calculado para sostener una corriente de carga en el bus DC de $I_{\text{carga}} = 6.381\text{ A}$ con un rizado máximo de $V_r = 2.5\text{ V}$ a una frecuencia de rectificación de onda completa $f_{$f_{\text{rect}} = 120\text{ Hz}$} = 120\text{ Hz}$:
   $$C_{\text{total}} = \frac{I_{\text{carga}}}{2 \cdot f_{\text{red}} \cdot V_r} = \frac{6.381\text{ A}}{2 \cdot 60\text{ Hz} \cdot 2.5\text{ V}} = 21,270\text{ }\mu\text{F} \implies \text{Implementado con } 3 \times 6800\text{ }\mu\text{F} = 20,400\text{ }\mu\text{F}$$
 * **Filtro Pi EMI de Salida ($L_6, C_{31}, C_{32}, C_{33}$):** Con un inductor $L_6 = 10\text{ }\mu\text{H}$ y capacitores de salida $C_{32} = C_{33} = 10\text{ }\mu\text{F}$ en paralelo ($20\text{ }\mu\text{F}$), atenúa el ruido de conmutación de alta frecuencia proveniente de los 5 reguladores.
 * **Indicador Luminoso de Bus Activo ($D_3, R_{15}$):**
