@@ -49,24 +49,12 @@ CrossRefFollowFromMainSettings=1
 PrefsVaultGUID=
 PrefsRevisionGUID=
 
-[Document1]
-DocumentPath=..\Power_Supply_MainBoard.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
+[Release]
+ReleaseTarget=1
+ReleaseFolderPath=[OutputPath]
+ReleaseZipPath=[OutputPath][ProjectName].zip
 
-[Document2]
+[Document1]
 DocumentPath=000_Hierarchical.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -83,7 +71,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WOWLWXRZ
 
-[Document3]
+[Document2]
 DocumentPath=100_AC-DC.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -100,7 +88,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IFPIPFMS
 
-[Document4]
+[Document3]
 DocumentPath=200_DC-DC.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,7 +105,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GCUGHXQK
 
-[Document5]
+[Document4]
 DocumentPath=201_DC-DC_Part2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,7 +122,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XIRQDQOI
 
-[Document6]
+[Document5]
 DocumentPath=202_DC-DC_Part3.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EXYTLDTF
 
-[Document7]
+[Document6]
 DocumentPath=Main_PCB_V1R0_XXXXXX.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -166,9 +154,9 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=DRWFULUB
 
-[Document8]
+[Document7]
 DocumentPath=Power_Supply_MainBoard.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -191,9 +179,31 @@ ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
-OutputJobsCount=0
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=Power_Supply_MainBoard.OutJob
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
+
+[Configuration2]
+Name=Fabrication
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Fabrication
+
+[Configuration3]
+Name=Assembly
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
 
 [OutputGroup1]
 Name=Netlist Outputs
