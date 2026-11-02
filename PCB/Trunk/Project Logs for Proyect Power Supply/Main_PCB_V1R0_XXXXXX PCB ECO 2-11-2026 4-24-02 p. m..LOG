@@ -1,0 +1,13 @@
+Added Component: Designator=C103(Cap_100nF_X7R-RADIAL_50V)
+Add component (AddParameter): Name = "Alternate"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified by"; Value = "J.A.Oviedo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20261022"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "C320C104K5R5TA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reel stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "399-4264-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Usage"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetBR100_1 Pin=C103-1
+Added Pin To Net: NetName=GND Pin=C103-2

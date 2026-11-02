@@ -1,0 +1,36 @@
+Removed Member From Class: ClassName=DC-DC Converter Member=C200
+Removed Member From Class: ClassName=DC-DC Converter Member=C201
+Removed Member From Class: ClassName=DC-DC Converter Member=C202
+Removed Member From Class: ClassName=DC-DC Converter Member=C203
+Removed Member From Class: ClassName=DC-DC Converter Member=C204
+Removed Member From Class: ClassName=DC-DC Converter Member=C205
+Removed Member From Class: ClassName=DC-DC Converter Member=C206
+Removed Member From Class: ClassName=DC-DC Converter Member=C207
+Removed Member From Class: ClassName=DC-DC Converter Member=C208
+Removed Member From Class: ClassName=DC-DC Converter Member=C209
+Removed Member From Class: ClassName=DC-DC Converter Member=C210
+Removed Member From Class: ClassName=DC-DC Converter Member=C211
+Removed Member From Class: ClassName=DC-DC Converter Member=C400
+Removed Member From Class: ClassName=DC-DC Converter Member=C401
+Removed Member From Class: ClassName=DC-DC Converter Member=C402
+Removed Member From Class: ClassName=DC-DC Converter Member=D400
+Removed Member From Class: ClassName=DC-DC Converter Member=J400
+Removed Member From Class: ClassName=DC-DC Converter Member=J401
+Removed Member From Class: ClassName=DC-DC Converter Member=L200
+Removed Member From Class: ClassName=DC-DC Converter Member=L201
+Removed Member From Class: ClassName=DC-DC Converter Member=L400
+Removed Member From Class: ClassName=DC-DC Converter Member=R200
+Removed Member From Class: ClassName=DC-DC Converter Member=R201
+Removed Member From Class: ClassName=DC-DC Converter Member=R202
+Removed Member From Class: ClassName=DC-DC Converter Member=R203
+Removed Member From Class: ClassName=DC-DC Converter Member=R204
+Removed Member From Class: ClassName=DC-DC Converter Member=R205
+Removed Member From Class: ClassName=DC-DC Converter Member=R400
+Removed Member From Class: ClassName=DC-DC Converter Member=R401
+Removed Member From Class: ClassName=DC-DC Converter Member=U200
+Removed Member From Class: ClassName=DC-DC Converter Member=U201
+Removed Member From Class: ClassName=DC-DC Converter Member=U400
+Change Component Comment : Designator=J400 Old Comment=Voltimeter New Comment=Conn 3POS
+Change Component Comment : Designator=J401 Old Comment=VR400 New Comment=Conn 3POS
+Add Class: Class already exists: DC-DC Converter
+Add Class: Class already exists: DC-DC Converter

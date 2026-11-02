@@ -1,0 +1,13 @@
+Replace Part BR100 BR_25A_50V_GBJ_Bridge in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with BR_25A_50V_GBJ_Bridge from Discrete_semiconductors.IntLib
+Replace Part C100 Cap_6800uF_TH_25*40_50V in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with Cap_6800uF_TH_25*40_50V from Capacitors.IntLib
+Replace Part C101 Cap_6800uF_TH_25*40_50V in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with Cap_6800uF_TH_25*40_50V from Capacitors.IntLib
+Replace Part C102 Cap_6800uF_TH_25*40_50V in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with Cap_6800uF_TH_25*40_50V from Capacitors.IntLib
+Replace Part C103 Cap_100nF_X7R-RADIAL_50V in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with Cap_100nF_X7R-RADIAL_50V from Capacitors.IntLib
+Replace Part C104 Cap_10uF_X7R_RADIAL_50V in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with Cap_10uF_X7R_RADIAL_50V from Capacitors.IntLib
+Replace Part C105 Cap_10uF_X7R_RADIAL_50V in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with Cap_10uF_X7R_RADIAL_50V from Capacitors.IntLib
+Replace Part D100 LED_TH_5MM_GREEN in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with LED_TH_5MM_GREEN from Optoelectronics.IntLib
+Replace Part F100 F_16A_500V_Cartridge_5x20mm_OGN in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with F_16A_500V_Cartridge_5x20mm_OGN from Circuit_protection.IntLib
+Replace Part J100 Con_2*1_TH_5mm_14.3*10.5_300V_15A in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with Con_2*1_TH_5mm_14.3*10.5_300V_15A from Connectors.IntLib
+Replace Part L100 L_10uH_10A_THT_25*3 in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with L_10uH_10A_THT_25*3 from Inductors-transformers.IntLib
+Replace Part R100 Res_1k1_TH_0.5W in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with Res_1k1_TH_0.5W from Resistors-potenciometers.IntLib
+Replace Part V100 Var_29V_500A_TH_DISC_10MM in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\100_AC-DC.SchDoc with Var_29V_500A_TH_DISC_10MM from Circuit_protection.IntLib

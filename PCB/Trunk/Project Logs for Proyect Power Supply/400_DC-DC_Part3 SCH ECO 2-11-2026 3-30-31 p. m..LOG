@@ -1,0 +1,10 @@
+Replace Part C400 Cap_470uF_ALU_SMD-16*16*16 in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\400_DC-DC_Part3.SchDoc with Cap_470uF_ALU_SMD-16*16*16 from Capacitors.IntLib
+Replace Part C401 Cap_680pF_0603_50V in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\400_DC-DC_Part3.SchDoc with Cap_680pF_0603_50V from Capacitors.IntLib
+Replace Part C402 Cap_220uF_35V_ALU_SMD in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\400_DC-DC_Part3.SchDoc with Cap_220uF_35V_ALU_SMD from Capacitors.IntLib
+Replace Part D400 D_40V_5A_DO-214AC_Schottky in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\400_DC-DC_Part3.SchDoc with D_40V_5A_DO-214AC_Schottky from Discrete_semiconductors.IntLib
+Replace Part J400 Con_3x1_TH_5.0mm in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\400_DC-DC_Part3.SchDoc with Con_3x1_TH_5.0mm from Connectors.IntLib
+Replace Part J401 Con_3x1_TH_5.0mm in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\400_DC-DC_Part3.SchDoc with Con_3x1_TH_5.0mm from Connectors.IntLib
+Replace Part L400 L_47uH_5A_SMD_17.15x17 in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\400_DC-DC_Part3.SchDoc with L_47uH_5A_SMD_17.15x17 from Inductors-transformers.IntLib
+Replace Part R400 Res_175_SMD-1206_2W in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\400_DC-DC_Part3.SchDoc with Res_175_SMD-1206_2W from Resistors-potenciometers.IntLib
+Replace Part R401 Res_10k_0603_1/10W in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\400_DC-DC_Part3.SchDoc with Res_10k_0603_1/10W from Resistors-potenciometers.IntLib
+Replace Part U400 DCDC_1.25/15V_3A_TO-263-5 in C:\Users\jefer\Desktop\Tareas\Prototipado\Git hub\Proyectos\Proyect_power_supply\PCB\Trunk\400_DC-DC_Part3.SchDoc with DCDC_1.25/15V_3A_TO-263-5 from LDO-DC_DC.IntLib
