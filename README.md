@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="./Documentation/Diagrams/Enclosure_Preview.jpg" alt="Diseño Mecánico y PCB - Jeff Tronics Power Supply" width="95%" />
+<img src="./Documentation/Diagrams/Enclosure_Preview.png" alt="Diseño Mecánico y PCB - Jeff Tronics Power Supply" width="95%" />
 
 <br><br>
 
