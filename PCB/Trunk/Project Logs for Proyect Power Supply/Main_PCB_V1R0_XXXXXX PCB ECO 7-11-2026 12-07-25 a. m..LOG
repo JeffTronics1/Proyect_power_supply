@@ -1,0 +1,43 @@
+Added Component: Designator=T200(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Component: Designator=T201(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Component: Designator=T300(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Component: Designator=T301(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Component: Designator=T302(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Component: Designator=T400(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Component: Designator=T401(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Component: Designator=T402(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Component: Designator=T403(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Component: Designator=T404(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Component: Designator=T405(TP_SMD_45mil)
+Add component (AddParameter): Name = "Last modified by"; Value = "J.Jaramillo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Last modified date"; Value = "20240310"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC204_1 Pin=T200-1
+Added Pin To Net: NetName=5V0 Pin=T201-1
+Added Pin To Net: NetName=NetC305_2 Pin=T301-1
+Added Pin To Net: NetName=NetC310_1 Pin=T302-1
+Added Pin To Net: NetName=NetC401_2 Pin=T400-1
+Added Pin To Net: NetName=GND Pin=T401-1
+Added Pin To Net: NetName=GND Pin=T402-1
+Added Pin To Net: NetName=GND Pin=T403-1
+Added Pin To Net: NetName=GND Pin=T404-1
+Added Pin To Net: NetName=GND Pin=T405-1

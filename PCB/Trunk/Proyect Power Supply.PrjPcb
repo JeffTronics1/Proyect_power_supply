@@ -73,7 +73,7 @@ DocumentUniqueId=WOWLWXRZ
 
 [Document2]
 DocumentPath=100_AC-DC.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=100
 AnnotationIndexControlEnabled=1
 AnnotateSuffix=
@@ -90,7 +90,7 @@ DocumentUniqueId=IFPIPFMS
 
 [Document3]
 DocumentPath=200_DC-DC.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=200
 AnnotationIndexControlEnabled=1
 AnnotateSuffix=
@@ -107,7 +107,7 @@ DocumentUniqueId=GCUGHXQK
 
 [Document4]
 DocumentPath=300_DC-DC_Part2.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=300
 AnnotationIndexControlEnabled=1
 AnnotateSuffix=
