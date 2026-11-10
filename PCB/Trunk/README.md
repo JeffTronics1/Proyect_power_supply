@@ -2,6 +2,10 @@
 
 <div align="center">
 
+<img src="../../Documentation/Diagrams/PCB_3D_Preview.png" alt="Vista 3D de la PCB - Fuente de Alimentación" width="90%" />
+
+<br><br>
+
 ![Altium Designer](https://img.shields.io/badge/Altium%20Designer-Project%20Trunk-005596?style=for-the-badge&logo=altiumdesigner)
 ![Architecture](https://img.shields.io/badge/Arquitectura-Estrictamente%20Jerárquica-8a2be2?style=for-the-badge)
 ![ERC](https://img.shields.io/badge/Compiler%20ERC-0%20Errors%20%7C%20Validated-brightgreen?style=for-the-badge)
@@ -93,3 +97,4 @@ El proyecto utiliza una estructura **estrictamente jerárquica (*Top-Down / Bott
 │  • +12V0 @ 5A (U1)   │         │  • -12V0 @ 1A (U5)    │         │  • 1.25-15V @ 3A (U4) │
 │  • +5V0  @ 5A (U2)   │         │  • +3V3  @ 3A (U3)    │         │  • Voltímetro (J2)    │
 └──────────────────────┘         └───────────────────────┘         └───────────────────────┘
+```
