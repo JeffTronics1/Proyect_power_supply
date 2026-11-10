@@ -2,13 +2,18 @@
 
 <div align="center">
 
+<img src="./Documentation/Diagrams/Enclosure_Preview.jpg" alt="Diseño Mecánico y PCB - Jeff Tronics Power Supply" width="95%" />
+
+<br><br>
+
 ![Hardware](https://img.shields.io/badge/Hardware-Open%20Source-orange?style=for-the-badge&logo=open-source-hardware)
 ![Altium Designer](https://img.shields.io/badge/Altium%20Designer-Hierarchical%20PCB-blue?style=for-the-badge&logo=altiumdesigner)
+![Fusion 360](https://img.shields.io/badge/Fusion%20360-3D%20Enclosure%20CAD-FF6C00?style=for-the-badge&logo=autodesk)
 ![Excel](https://img.shields.io/badge/Excel-Power%20%26%20BOM%20Calculator-217346?style=for-the-badge&logo=microsoftexcel)
 ![Draw.io](https://img.shields.io/badge/Draw.io-Power%20Tree-F08705?style=for-the-badge&logo=diagramsdotnet)
 ![Status](https://img.shields.io/badge/ERC%20Check-Passed%20(0%20Errors)-brightgreen?style=for-the-badge)
 
-**Ingeniería electrónica integral: Arquitectura estrictamente jerárquica en Altium Designer, modelado energético en Excel y diseño de circuito impreso (PCB) para equipos de laboratorio.**
+**Ingeniería electrónica y mecatrónica integral: Arquitectura estrictamente jerárquica en Altium Designer, integración electro-mecánica 3D (ECAD-MCAD), modelado energético en Excel y diseño de circuito impreso (PCB) para equipos de laboratorio.**
 
 [📚 Ir a Documentación de Ingeniería](./Documentation/README.md) • [🛠️ Ir a Esquemáticos y PCB (Trunk)](./PCB/Trunk/README.md) 
 
@@ -22,6 +27,7 @@ Este repositorio documenta el diseño completo de una **Fuente de Alimentación 
 
 > 💡 **Características Destacadas:**
 > * **Diseño Jerárquico (*Top-Down*):** Estructura modular en Altium que facilita el aislamiento de etapas y la depuración sin errores eléctricos (ERC).
+> * **Integración ECAD-MCAD:** Ensamblaje mecánico a medida con distribución interna de transformador toroidal, placa PCB principal, bornas frontales y cubierta personalizada **Jeff Tronics**.
 > * **Alta Eficiencia:** Uso de reguladores Buck síncronos (`SY8205FCC`) y topologías Buck-Boost de grado industrial.
 > * **Protección Integral:** Aislamiento primario (fusible y varistor MOV), filtrado capacitivo de $20,400\text{ }\mu\text{F}$ y red EMI tipo Pi.
 
@@ -72,7 +78,7 @@ Para facilitar la revisión del proyecto, los archivos están organizados en dos
 | 📚 | **[`Documentation/`](./Documentation/README.md)** | **Carpeta raíz de ingeniería, matemáticas y hojas de datos.** |
 | 📊 | ↳ `Power_supply_design.xlsx` | Libro maestro con especificaciones, restricciones de ruteo y lista BOM (66 ítems). |
 | 🧮 | ↳ `Capture_the_buck_calculator/`| Análisis de disipación térmica y requerimientos de corriente por convertidor. |
-| 📐 | ↳ `Diagrams/` | Diagrama de bloques y Árbol de potencias (Archivos `.drawio` y `.png`). |
+| 📐 | ↳ `Diagrams/` | Diagrama de bloques, Árbol de potencias y vistas CAD (Archivos `.drawio` y `.png`). |
 | | | |
 | 🔌 | **[`PCB/Trunk/`](./PCB/Trunk/README.md)** | **Entorno de desarrollo de hardware en Altium Designer.** |
 | 🧠 | ↳ **`Proyect Power Supply.PrjPcb`**| **Archivo Maestro:** Enlaza todos los esquemáticos y la placa PCB en un solo proyecto. |
